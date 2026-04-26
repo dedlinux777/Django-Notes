@@ -11,3 +11,6 @@ class StationSerializer(serializers.ModelSerializer):
         if value < -50 or value > 60:
             raise serializers.ValidationError("Temperature out of valid sensor range.")
         return value
+
+
+
